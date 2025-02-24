@@ -1,6 +1,10 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-image: url('img/bgw.jpg');
-
+    background-size: cover;
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: white;
@@ -75,4 +79,136 @@ button:hover {
     max-height: 250px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
+}
+
+/* Media Queries para todos os tamanhos de tela */
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 800px;
+        padding: 30px;
+    }
+
+    input {
+        max-width: 500px;
+        padding: 15px;
+    }
+
+    button {
+        padding: 15px 35px;
+        font-size: 18px;
+    }
+
+    .result {
+        max-width: 600px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 600px;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        max-width: 500px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: clamp(24px, 4vw, 36px);
+    }
+
+    .result {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin: 10px auto;
+        padding: 15px;
+        width: 98%;
+    }
+
+    .header-img {
+        width: 60px;
+    }
+
+    input {
+        width: 90%;
+        padding: 10px;
+    }
+
+    button {
+        width: 97%;
+        margin-top: 10px;
+    }
+
+    .result {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 10px;
+        border-width: 3px;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    .header-img {
+        width: 60px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 97%;
+        font-size: 14px;
+    }
+}
+
+/* Orientação Paisagem para dispositivos móveis */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    body {
+        padding: 10px 0;
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: clamp(20px, 4vw, 28px);
+        margin: 5px 0;
+    }
+
+    .header-img {
+        width: clamp(50px, 10vw, 80px);
+        margin: 5px auto;
+    }
+
+    input,
+    button {
+        padding: 8px;
+        margin: 5px 0;
+    }
 }
