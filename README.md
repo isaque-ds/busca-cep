@@ -2,7 +2,7 @@
 Um projeto simples de busca de CEP utilizando HTML, CSS e JavaScript para consumir a API ViaCEP e exibir os dados de endereço.
 ## 🖥️ Visualize o Projeto
 
-🔗 Clique aqui para visualizar o projeto: 
+🔗 Clique aqui para visualizar o projeto:  https://isaque-ds.github.io/busca-cep/
 ## Funcionalidas
 ✅Busca de endereço a partir de um CEP informado pelo usuário.<br>
 ✅ Consumo da API ViaCEP.<br>
