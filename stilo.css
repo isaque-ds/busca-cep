@@ -12,16 +12,21 @@ body {
     width: 90%;
     max-width: 600px;
     margin: 50px auto;
-    background: #ffcc00;
+    background: #1E1E1E;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    border-top: 5px solid #ffcc00;
+    border: 5px solid #bd1b06;
     position: relative;
 }
 
 h1 {
-    color: rgb(23, 2, 86);
+    color: #bd1b06;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+
 }
 
 img {
@@ -37,7 +42,7 @@ input {
 }
 
 button {
-    background: rgb(23, 2, 86);
+    background: #bd1b06;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -47,7 +52,7 @@ button {
 }
 
 button:hover {
-    background: rgb(33, 33, 33);
+    background: #e13d27;
 }
 
 .result {
@@ -55,12 +60,14 @@ button:hover {
     padding: 10px;
     background: white;
     border-radius: 5px;
+    display: none;
+    text-align: left;
 }
 
 .header-img {
     width: 150px;
     margin: 10px auto;
-    color: black;
+
 }
 
 .background-img {
